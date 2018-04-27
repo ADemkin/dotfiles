@@ -2,6 +2,12 @@
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
+# Increase bash history size
+HISTFILESIZE=10000000
+HISTSIZE=10000000
+export HISTFILESIZE
+export HISTSIZE
+
 
 function pkit(){
 	cd /Volumes/Atlas/code/pkit/
@@ -21,3 +27,5 @@ function pypki2(){
 	. ../../venv/pypki2.7/bin/activate
 	export PYTHONPATH=src:$PYTHONPATH
 }
+
+
