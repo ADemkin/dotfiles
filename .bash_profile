@@ -10,21 +10,21 @@ export HISTSIZE
 
 
 function pkit(){
-	cd /Volumes/Atlas/code/pkit/
-	. ../../venv/pkit/bin/activate
+	cd ~/code/pkit/
+	. ~/venv/pkit/bin/activate
 	export PYTHONPATH=src:$PYTHONPATH
 }
 
 function pypki(){
-	cd /Volumes/Atlas/code/pypki/
-	. ../../venv/pypki/bin/activate
+	cd ~/code/pypki/
+	. ~/venv/pypki/bin/activate
 	export PYTHONPATH=src:$PYTHONPATH
 }
 
 
 function pypki2(){
-	cd /Volumes/Atlas/code/pypki/
-	. ../../venv/pypki2.7/bin/activate
+	cd ~/code/pypki/
+	. ~/venv/pypki2/bin/activate
 	export PYTHONPATH=src:$PYTHONPATH
 }
 
