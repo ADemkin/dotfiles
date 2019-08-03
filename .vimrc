@@ -114,7 +114,7 @@ let g:vim_isort_map = '<C-s>'
 
 " abbrev
 autocmd FileType python iabbrev pdb import pdb ; pdb.set_trace()<CR>pass
-autocmd FileType sh iabbrev ! #!/bin/sh
+autocmd FileType sh iabbrev #! #!/bin/sh
 
 " Statusline
 hi User1 ctermbg=blue ctermfg=black
