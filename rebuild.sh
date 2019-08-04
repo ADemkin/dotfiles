@@ -61,7 +61,7 @@ virtualenv --python="$PYTHON" "$PROJECT_VENV_PATH"
 . "$PROJECT_VENV_PATH/bin/activate"
 # cp $HOME/.pip.conf $PROJECT_VENV_PATH/pip.conf  # TODO: echo "" >> $PROJECT_VENV_PATH/pip.conf
 pip --disable-pip-version-check install pip==9.0.3 gnureadline flake8
-find "$PROJECT_PATH" -name "requirements*.txt" -type f -exec pip --disable-pip-version-check install -r "{}" ";"
+find "$PROJECT_PATH" -name "requirements*.txt" -type f -maxdepth 1 -exec pip --disable-pip-version-check install -r "{}" ";"
 cd "$PROJECT_PATH"
 
 echo "Rebuilding virtialenv for $1 done"
